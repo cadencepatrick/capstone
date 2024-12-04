@@ -1,18 +1,19 @@
 console.log("Accessibility Rocks")
-
-const switcher = document.querySelector('.btn');
-
-switcher.addEventListener('click', function() {
-document.body.classList.toggle("dark-theme");
+document.addEventListener('DOMContentLoaded', function(){
+    const switcher = document.querySelector('.btn');
     
-    var className = document.body.className;
-    if(className == "light-theme") {
-        this.textContent = "Dark Mode";
-    }
-    else {
-        this.textContent = "Light Mode";
-    }
-    console.log(className);
+    switcher.addEventListener('click', function() {
+    document.body.classList.toggle("dark-theme");
+        
+        var className = document.body.className;
+        if(className == "light-theme") {
+            this.textContent = "Dark Mode";
+        }
+        else {
+            this.textContent = "Light Mode";
+        }
+        console.log(className);
+    });
 });
 
 // TEXT TO SPEECH
