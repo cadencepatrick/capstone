@@ -3,13 +3,13 @@
     "name": "Access Reader",
     "minimum_chrome_version": "24.0.1307.0",
     "version": "0.0.1",
-    "homepage_url": "https://github.com/cadencepatrick/capstone.git",
+    "homepage_url": "https://cadencepatrick.github.io/capstone/",
     "icons": {
     },
     "content_scripts": [
         {
         "matches": [
-        "https://github.com/cadencepatrick/capstone.git"
+        "https://cadencepatrick.github.io/capstone/"
         ],
 
         "js": [
