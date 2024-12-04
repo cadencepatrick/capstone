@@ -1,0 +1,110 @@
+:root {
+    --beige: #FFF8EC;
+    --white: #ffffff;
+    --navy: #005e70;
+}
+@font-face {
+    font-family: headerFont;
+    src: url(Figtree-Regular.ttf);
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.highlight {
+    outline: 3px solid red;
+}
+
+.btn {
+    position: fixed;
+    top: 20px;
+    right: 25px !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    content: var(--btnText);
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    /*z-index: 99999*/
+}
+
+.btn:focus {
+    outline-style: none;
+}
+
+.line {
+    color: var(--lineColor);
+}
+
+.artist {
+    text-align: center;
+    margin: 20px !important;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: headerFont;
+}
+
+body {
+    background: var(--bg);
+    margin: 20px;
+}
+
+ul {
+    font-family: headerFont;
+}
+
+img {
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+}
+
+/*Flex code from W3Schools*/
+.row {
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+}
+  
+.column {
+    flex: 50%;
+    margin: 20px;
+    justify-content: left;
+    align-items: left;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+li {
+    list-style: circle;
+}
+
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--beige) !important;
+    --fontColor: var(--navy) !important;
+    --btnBg: var(--navy) !important;
+    --btnFontColor: var(--white) !important;
+    --lineColor: var(--navy) !important;
+}
+
+.dark-theme {
+    --bg: var(--navy) !important;
+    --fontColor: var(--beige) !important;
+    --btnBg: var(--beige) !important;
+    --btnFontColor: var(--navy) !important;
+    --lineColor: var(--beige) !important;
+}

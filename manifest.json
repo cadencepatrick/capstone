@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Access Reader",
+    "minimum_chrome_version": "24.0.1307.0",
+    "version": "0.0.1",
+    "homepage_url": "https://github.com/cadencepatrick/capstone.git",
+    "icons": {
+    },
+    "content_scripts": [
+        {
+        "matches": [
+        "https://github.com/cadencepatrick/capstone.git"
+        ],
+
+        "js": [
+        "jquery.min.js",
+        "capstone.js"
+        ],
+        
+        "css": ["capstone.css"],
+        "run_at": "document_idle"
+        }
+    ]
+}
